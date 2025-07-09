@@ -1,0 +1,65 @@
+import './index.css';
+
+function App() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center px-4 py-12">
+      {/* Header */}
+      <header className="w-full max-w-7xl flex justify-between items-center border-b pb-6">
+        <h1 className="text-2xl font-bold tracking-tight">HelioShare</h1>
+        <nav className="space-x-6 text-sm font-medium">
+          <a href="#about" className="text-gray-600 hover:text-indigo-600">About</a>
+          <a href="#projects" className="text-gray-600 hover:text-indigo-600">Projects</a>
+          <a href="#login" className="text-indigo-600 hover:underline">Log In</a>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="text-center max-w-3xl mt-16 space-y-6">
+        <h2 className="text-4xl font-bold leading-tight">
+          Own the Future of Energy
+        </h2>
+        <p className="text-lg text-gray-600">
+          Invest in and earn from real-world solar projects — transparently, securely, and sustainably.
+        </p>
+        <a
+          href="#login"
+          className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded transition"
+        >
+          Log In to Access the Demo
+        </a>
+      </section>
+
+      {/* Project Types */}
+      <section id="projects" className="w-full max-w-7xl mt-24 space-y-6">
+        <h3 className="text-2xl font-semibold border-b pb-2">Project Types</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+            <h4 className="font-semibold text-lg">Rooftop Solar (USA)</h4>
+            <p className="text-gray-600 text-sm mt-2">
+              Fractional ownership in rooftops with stable tenants and long-term leases.
+            </p>
+          </div>
+          <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+            <h4 className="font-semibold text-lg">Microgrid Projects</h4>
+            <p className="text-gray-600 text-sm mt-2">
+              Off-grid systems with battery backup and daily dividend payouts.
+            </p>
+          </div>
+          <div className="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition">
+            <h4 className="font-semibold text-lg">International PV Fields</h4>
+            <p className="text-gray-600 text-sm mt-2">
+              Utility-scale solar arrays with PPAs in emerging markets.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-sm text-gray-400 mt-24 pt-6 border-t w-full max-w-7xl text-center">
+        &copy; {new Date().getFullYear()} HelioShare. All rights reserved.
+      </footer>
+    </div>
+  );
+}
+
+export default App;
