@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/Logo_dark_blue.png";
+import dashboardPreview from "../assets/dashboard-preview.png";
 import campusImage from "../assets/local-campus.png";
 import industrialImage from "../assets/industrial.jpg";
 import carportsImage from "../assets/carports.png";
@@ -17,16 +18,12 @@ const LandingPage = () => {
 
       {/* Hero Section */}
       <main className="flex flex-col items-center justify-center text-center px-4 pt-12">
-        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-blue-900">Powering the Future, One Roof at a Time</h1>
+        <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 text-blue-900">
+          Powering the Future, One Roof at a Time
+        </h1>
         <p className="max-w-xl text-lg text-gray-700 mb-8">
           HelioShare connects communities and investors to high-performing, real-world solar assets through blockchain technology.
         </p>
-        <a
-          href="mailto:wwcarlson@gmail.com?subject=Requesting%20Access%20to%20HelioShare"
-          className="inline-block bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition"
-        >
-          Request Access
-        </a>
       </main>
 
       {/* Product Types */}
@@ -37,7 +34,9 @@ const LandingPage = () => {
             <img src={campusImage} alt="Local Campus Solar" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Local Campuses</h3>
-              <p className="text-gray-700">Universities and schools benefit from long-term, cost-stable energy backed by our blockchain platform.</p>
+              <p className="text-gray-700">
+                Universities and schools benefit from long-term, cost-stable energy backed by our blockchain platform.
+              </p>
             </div>
           </div>
 
@@ -45,7 +44,9 @@ const LandingPage = () => {
             <img src={industrialImage} alt="Industrial Rooftop Solar" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Industrial Rooftops</h3>
-              <p className="text-gray-700">Commercial properties reduce overhead and gain passive income by hosting energy-producing solar assets.</p>
+              <p className="text-gray-700">
+                Commercial properties reduce overhead and gain passive income by hosting energy-producing solar assets.
+              </p>
             </div>
           </div>
 
@@ -53,10 +54,35 @@ const LandingPage = () => {
             <img src={carportsImage} alt="Solar Carports" className="w-full h-48 object-cover" />
             <div className="p-4">
               <h3 className="text-xl font-semibold text-blue-900 mb-2">Solar Carports</h3>
-              <p className="text-gray-700">Efficient use of parking lots to power EVs and feed the grid—tokenized, monitored, and investor-friendly.</p>
+              <p className="text-gray-700">
+                Efficient use of parking lots to power EVs and feed the grid—tokenized, monitored, and investor-friendly.
+              </p>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Dashboard Preview */}
+      <section className="mt-20 px-6 max-w-5xl mx-auto text-center">
+        <h2 className="text-3xl font-semibold text-blue-900 mb-6">Preview: Project Dashboard</h2>
+        <img
+          src={dashboardPreview}
+          alt="HelioShare Dashboard Preview"
+          className="rounded-xl shadow-lg mx-auto max-w-full"
+        />
+        <p className="mt-4 text-gray-600">
+          Behind the scenes: Track solar generation, ownership, and dividends. Fully built with React, Node.js, PostgreSQL, and Stellar.
+        </p>
+      </section>
+
+      {/* Access Request CTA */}
+      <section className="text-center mt-10">
+        <a
+          href="mailto:wwcarlson@gmail.com?subject=MVP%20Access%20Request%20for%20HelioShare"
+          className="inline-block bg-blue-700 text-white px-6 py-3 rounded-lg hover:bg-blue-800 transition"
+        >
+          MVP Access Request
+        </a>
       </section>
 
       {/* Footer */}
